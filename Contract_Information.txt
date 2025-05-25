@@ -1,0 +1,7 @@
+xcyB5QMa8RmC35mzU0ogYeFaSdhTBOnzoLEC/5hmETi6VGJQTnhbhpaj1GbXcPgwAyj6Mxx8GGcSXhWN/LjHrd8vTwwwjDcvSQU7o6JNxMkyhsDrAb32iP0X4vj/AcYXgKeQDYQyOmMZDeqc4bpdK7JeKA+JFhy+r+d44dt+jcM=Contract Details:
+Contract ID: STC001
+Property ID: P002
+Tenant ID: T002
+Rent Amount: $200.0
+Contract Type: Shortterm
+

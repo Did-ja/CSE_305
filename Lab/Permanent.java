@@ -1,4 +1,4 @@
-package models;
+
 
 public class Permanent implements ContractBuilder {
     private String contractID;
@@ -28,7 +28,7 @@ public class Permanent implements ContractBuilder {
 
     @Override
     public RentalContract signContract() {
-        return new RentalContract(this.contractID, this.propertyID, this.tenantID, this.rentAmout);
+        return new RentalContract(this.contractID, this.propertyID, this.tenantID, this.rentAmout, "Permanent");    
     }
     
 

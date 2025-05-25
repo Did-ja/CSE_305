@@ -1,11 +1,10 @@
-package models;
+
 
 public class Shortterm implements ContractBuilder {
     private String contractID;
     private String propertyID;
     private String tenantID;
     private double rentAmout;
-    // private String typeContract;
 
     @Override
     public void setBuildContractID(String contractID) {
@@ -29,7 +28,7 @@ public class Shortterm implements ContractBuilder {
 
     @Override
     public RentalContract signContract() {
-        return new RentalContract(this.contractID, this.propertyID, this.tenantID, this.rentAmout);
+        return new RentalContract(this.contractID, this.propertyID, this.tenantID, this.rentAmout, "Shortterm");
     }
 
 }

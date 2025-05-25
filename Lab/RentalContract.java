@@ -1,19 +1,20 @@
-package models;
+
 
 public class RentalContract {
    private String contractID;
    private String propertyID;   
     private String tenantID;
-    private double rentAmout;
-    private String typeContract;
+    private double rentAmount;
     private boolean isActive;
-    public RentalContract(String contractID, String propertyID, String tenantID, double rentAmout
+    private String contractType;
+    public RentalContract(String contractID, String propertyID, String tenantID, double rentAmout, String contractType
             ) {
         this.contractID = contractID;
         this.propertyID = propertyID;
         this.tenantID = tenantID;
-        this.rentAmout = rentAmout;
+        this.rentAmount = rentAmout;
         this.isActive = true;
+        this.contractType = contractType;
     }
     public String getContractID() {
         return contractID;
@@ -33,11 +34,11 @@ public class RentalContract {
     public void setTenantID(String tenantID) {
         this.tenantID = tenantID;
     }
-    public double getRentAmout() {
-        return rentAmout;
+    public double getRentAmount() {
+        return rentAmount;
     }
-    public void setRentAmout(double rentAmout) {
-        this.rentAmout = rentAmout;
+    public void setRentAmount(double rentAmout) {
+        this.rentAmount = rentAmout;
     }
     
 
@@ -47,5 +48,20 @@ public class RentalContract {
     public void setActive(boolean isActive) {
         this.isActive = isActive;
     }
-    
+    public String getContractType() {
+        return contractType;
+    }
+    public void setContractType(String contractType) {
+        this.contractType = contractType;
+    }
+    @Override
+    public String toString() {
+        return "Contract Details:\n"
+                + "Contract ID: " + this.contractID + "\n"
+                + "Property ID: " + this.propertyID + "\n"
+                + "Tenant ID: " + this.tenantID + "\n"
+                + "Rent Amount: $" + this.rentAmount + "\n"
+                + "Contract Type: " + this.contractType + "\n";
+    }
+   
 }
